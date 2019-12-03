@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-12-03 08:51:30 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMjE7MjAxOS0xMi0wMzswODoyMDo1MCBBTTsyMTg5"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMjE7MjAxOS0xMi0wMzswODo1MTozMCBBTTsxOzIyOTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="num3" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <if expression="num1&lt;num2">
+                <then>
+                    <if expression="num1&lt;num3">
+                        <then>
+                            <output expression="&quot;less than=num1&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;less than=num3&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="num2&lt;num3">
+                        <then>
+                            <output expression="&quot;less than=num2&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;less than=num3&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
